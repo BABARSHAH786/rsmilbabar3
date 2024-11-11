@@ -1,15 +1,104 @@
+<!-- index.html  -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Creator</title>
+    <!-- style link here -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Static Resume</h1>
+    <!-- input container starts here -->
+    <section class="resume-builder">
+        <div class="container">
+            <h1>Resume Creator</h1>
+            <div class="resume_container">
+                <form class="inputField">
+                    <h3>Enter your full name</h3>
+                    <input type="text" 
+                           name="name" 
+                           placeholder="Your Name" 
+                           title="Enter Your Name" />
+                           <h3>Enter your designation</h3>
+                    <input type="text" 
+                           name="title" 
+                           placeholder="Title/Sub Heading" 
+                           title="Enter Title/Sub Heading" />
+                           <h3>Work Experience</h3>
+                    <textarea name="work_experience" 
+                              placeholder="Work Experience" 
+                              cols="40" rows="3"
+                              title="Enter Your Work Experience">
+                    </textarea>
+                    <h3>Academic Detail</h3>
+                    <textarea name="academic_details" 
+                              placeholder="Academic Details" 
+                              cols="40" rows="3"
+                              title="Enter Your Academic Details">
+                    </textarea>
+                    <h3>Objective</h3>
+                    <input type="text" placeholder="Objective" 
+                           title="Enter Your Objective" 
+                           name="objective" />
+                           <h3>Skill Section</h3>
+                    <textarea name="skills" 
+                              title="Enter Your Skills" 
+                              placeholder="Skills" cols="40"
+                              rows="3">
+                    </textarea>
+                    <h3>Project</h3>
+                    <textarea name="projects" 
+                              title="Enter Your Projects" 
+                              placeholder="Projects" 
+                              cols="40"
+                              rows="3">
+                    </textarea>
+                    <h3>Achievements</h3>
+                    <textarea 
+                    required
+                    name="achievements" 
+                              placeholder="Achievements" 
+                              cols="40" rows="3"
+                              title="Enter Your Achievements">
+                    </textarea>
+                    <h3>Contact details</h3>
+                    <textarea name="contact" 
+                              placeholder="Contact Information" 
+                              cols="40" rows="3"
+                              title="Enter Your Contact Information">
+                    </textarea>
+                    <p></p>
+                    <input type="email" id="myFile" name="filename">
 
-    <script src="./app.ts"></script>
-    
+                </form>
+            </div>
+            <p class="credit">
+                Created by
+                <a >
+                      Syed Babar Ali
+                </a>
+            </p>
+            <p class="tip">
+            </p>
+        </div>
+    </section>
+    <!-- input container ends here -->
+
+    <!-- output container starts here -->
+    <div class="output_container"></div>
+    <!-- output container ends here -->
+
+    <!-- preview button -->
+    <button onclick="hide()">
+          Resume Generate 
+      </button>
+
+    <!-- script link here -->
+    <script src="app.js"></script>
+    <!-- <script src="app.ts"></script> -->
 </body>
+
 </html>
